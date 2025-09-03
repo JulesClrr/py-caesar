@@ -1,10 +1,8 @@
-text = "Ub nésf ftu mb qfstpoof mb qmvt gpsnjebcmf bv npoef Nbyjnf/"
-caesartext = ""
-
-def caesar(text, caesartext):
+def caesar(text):
+    caesartext = ""
     for letter in text :
         number = ord(letter)
-        if number == ord("a") :
+        if number == ord("a") or number == ord("A") :
             number = number + 26
         elif number == ord(" "):
             number = number + 1
@@ -14,4 +12,4 @@ def caesar(text, caesartext):
         
     print(caesartext)
 
-caesar(text, caesartext)
+caesar("Ub nésf ftu mb qfstpoof mb qmvt gpsnjebcmf bv npoef Nbyjnf/")
